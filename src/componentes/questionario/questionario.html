@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./questionario.css">
+</head>
+<body>
+    <section id="questionario">
+        <div class="container">
+            <div class="row">
+                <div class="col s5">
+                    <div class="input-field">
+                        <select>
+                          <option value="" disabled selected>Escolha uma opção</option>
+                          <option value="1">Perder Peso</option>
+                          <option value="2">Dieta Esportiva</option>
+                          <option value="3">Restrição Alimentar</option>
+                        </select>
+                        <label>Motivação *</label>
+                    </div>
+                    <div class="input-field">
+                        <select>
+                          <option value="" disabled selected>Escolha uma opção</option>
+                          <option value="1">Alergia a Lactose</option>
+                          <option value="2">Alergia a Glútem</option>
+                          <option value="3">Restrição Açúcar</option>
+                          <option value="4">Restrição Sal</option>
+                        </select>
+                        <label>Restrição *</label>
+                    </div>
+
+                    <label>Sexo *</label> <br>
+                    <label>
+                        <input class="with-gap" name="sexo" type="radio" checked/>
+                        <span>Masculino</span>
+                    </label>
+                    <label>
+                        <input class="with-gap" name="sexo" type="radio"/>
+                        <span>Feminino</span>
+                    </label> <br> <br>
+
+                    <label for="data_nascimento">Data de nascimento *</label>
+                    <input  id="data_nascimento" type="date" class="validate"> <br> <br>
+
+                    <label>Atividade física *</label>
+                    <div class="row">
+                        <div class="col s6">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Caminhada</span>
+                            </label>
+                        </div>
+                        <div class="col s6">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Natação</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Corrida</span>
+                            </label>
+                        </div>
+                        <div class="col s6">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Futebol</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Academia</span>
+                            </label>
+                        </div>
+                        <div class="col s6">
+                            <label>
+                                <input type="checkbox" />
+                                <span>Ciclismo</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim primeira coluna-->
+                <div class="col s5 offset-s2">
+                    <div>
+                        <label for="peso">Peso *</label>
+                        <input id="peso" placeholder="peso kg *" type="text" class="validate">
+                    </div>
+                    <div>
+                        <label for="altura">Altura *</label>
+                        <input id="altura" placeholder="altura cm *" type="text" class="validate">
+                    </div>
+                    <div>
+                        <label for="perimetro_cintura">Perimetro Cintura</label>
+                        <input id="perimetro_cintura" placeholder="cm" type="text" class="validate">
+                    </div>
+                    <div>
+                        <label for="perimetro_quadril">Perimetro Quadril </label>
+                        <input id="perimetro_quadril" placeholder="cm" type="text" class="validate">
+                    </div>
+                    <p>* Campos obrigatórios</p>
+                    <a class="waves-effect waves-light btn col s4 offset-s8">Finalizar</a>
+                </div>
+                <!--Fim segunda coluna-->
+            </div>
+            <!--Fim row-->
+        </div>
+        <!--Fim container-->
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./questionario.js"></script>
+</body>
+</html>
