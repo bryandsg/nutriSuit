@@ -1,0 +1,49 @@
+.row {
+    width: 750px;
+    display: inline-block;
+    margin-left: 300px;
+    text-align: center;
+}
+.containerOrganizer{
+    text-align: center;
+}
+
+h1{
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+label{
+    font-size: 15px;
+    float: right;
+}
+
+li{
+    display: inline-block;
+    margin-inline-start: 15px;
+}
+
+#dishName
+{
+   margin-top: 10px;
+
+}
+
+footer{
+
+        display: flex;
+        flex-direction: column;
+
+}
+
+.card-action>div{
+    display: inline-block;
+    text-align: center;
+
+}
+
+
