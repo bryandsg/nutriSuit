@@ -10,74 +10,180 @@
       rel="stylesheet">
 </head>
 <body>
-    <section id="questionario">
+    <!-- nav bar -->
+    <nav> 
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <span id="menu-icon"class="material-icons">menu</span>
+        </a>    
+        <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li><a href="#">Tiulo Tela</a></li>
+            
+          </ul>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li><a class="waves-effect" href="./src/componentes/questionario/questionario.html">Questionário</a></li>
+        <li><a class="waves-effect" href="./src/componentes/opçoesCardapio/opçoes.html">opções de Cardápio</a></li>
+        <li><a class="waves-effect" href="#">opção3</a></li>
+
+    </ul>
+    <!-- nav bar -->
+    <form id="questionario">
        
         <div class="carousel carousel-slider">
-
+    <!-- Primeira parte do formulario -->
             <div class="carousel-item">
 
-                <div class="container">
+                <div class="container row">
                     <h3>1° Passo</h3>
                     <p class="text-flow">Conte-nos um pouco sobre você</p>
                     
                     <div class="input-field col s12">
-                        <input type="text" id="peso">
-                        <label for="peso">Qual é o seu Peso</label>
+                        <input required class="validate" type="number" id="peso">
+                        <label for="peso">Qual é o seu Peso em kg*</label>
                     </div>
                     
                     <div class="input-field col s12">
-                        <input type="text" id="altura">
-                        <label for="altura">Qual a sua Altura</label>
+                        <input required class="validate" type="number" id="altura">
+                        <label for="altura">Qual é a sua Altura em cm*</label>
                     </div>
                     <div class="input-field col s12">
-                        <input type="date" id="idade">
-                        <label for="idade">Qual a sua Data de Nascimento</label>
+                        <input required class="validate" type="date" id="idade">
+                        <label for="idade">Qual a sua Data de Nascimento*</label>
                     </div>
                     
                     <div class="input-field col s12">
-                        <p>
+                        <div class="col s12">
+                            <label for=""> Qual é o seu sexo* </label>
+                        </div>
+                        <div class="col s6">
                             <label>
-                              <input class="with-gap" name="group1" type="radio" checked />
-                              <span>Masculino</span>
+                                <input  class="with-gap" name="sexo" type="radio" checked />
+                                <span>Masculino</span>
                             </label>
-                          </p>
-                          <p>
+                        </div>
+                          
+                        <div class="col s6">
                             <label>
-                              <input class="with-gap" name="group1" type="radio" />
-                              <span>Feminino</span>
-                            </label>
-                          </p>
+                                <input class="with-gap" name="sexo" type="radio"/>
+                                <span>Feminino</span>
+                              </label>
+                        </div>
+                    </div>
+                    <div class="col s8 aviso">
+                        <label for="">Todos os campos com * devem ser preenchidos </label>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item amber white-text" href="#two!">
                
-                <div class="container">
+            </div>
+
+    <!-- Segunda Parte do formulário -->
+
+            <div class="carousel-item">
+               
+                <div class="container row">
                     <h3>2° Passo</h3>
                     <p class="text-flow">Conte-nos um pouco mais sobre você</p>
                     
                     <div class="input-field col s12">
-                        motivacao
+                        <select required >
+                            <option value="" disabled selected>Qual a sua principal motivação*</option>
+                            <option value="1">Perder Peso</option>
+                            <option value="2">Dieta Esportiva</option>
+                            <option value="3">Restrição Alimentar</option>
+                          </select>
+                          
                     </div>
                     
                     <div class="input-field col s12">
-                       restricao
+                        <select required>
+                            <option value="" disabled selected>Qual a sua principal Restrição* </option>
+                            <option value="1">Alergia Lactose</option>
+                            <option value="2">Alergia Glúten</option>
+                            <option value="3">Restrição Açúcar</option>
+                            <option value="4">Restrição Sal</option>
+
+                          </select>
                     </div>
+                    <div class="col s12">
+                        <label >Selecione as atividades físicas que você pratica</label>
+                        <div class="row">
+                            <!-- CHECK BOXES -->
                     <div class="input-field col s12">
-                        atividades
+                        
+                        
+                        <div class="col s6">
+                            <div class="row">
+                            <label for="natacao">
+                                <input id="natacao" type="checkbox" />
+                                <span>Natação</span>
+                            </label>
+                            </div>
+                            <div class="row">
+                            <label for="corrida">
+                                <input id="corrida" type="checkbox" />
+                                <span>Corrida</span>
+                            </label>
+                            </div>
+                            <div class="row">
+                            <label for="caminhada">
+                                <input id="caminhada" type="checkbox" />
+                                <span>Caminhada</span>
+                            </label>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="row">
+                                <label for="academia">
+                                    <input id="academia" type="checkbox" />
+                                    <span>Academia</span>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label for="futebol">
+                                    <input id="futebol" type="checkbox" />
+                                    <span>Futebol</span>
+                                </label>
+                            </div>
+                            <div class="row">
+                                <label for="ciclismo">
+                                    <input id="ciclismo" type="checkbox" />
+                                    <span>Ciclismo</span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                   
+                   <!-- CHECK BOXES -->
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>
-            <div class="carousel-item green white-text" href="#three!">
-                <h2>Third Panel</h2>
-                <p class="white-text">This is your third panel</p>
+    <!-- Terceira parte do form -->
+            <div class="carousel-item">
+                <div class="container row">
+                    <h3>3° Passo</h3>
+                    <p class="text-flow">Estamos quase lá...</p>
+
+                    <div class="input-field s12">
+                        <input class="validate" id="cintura" type="number">
+                        <label for="cintura">Medida da cintura em cm</label>
+                    </div>
+                    <div class="input-field s12">
+                        <input class="validate" id="quadril" type="number">
+                        <label for="quadril">Medida do quadril em cm</label>
+                    </div>
+                    <button class="btn waves-effect waves-light col s5 offset-s7 " type="submit">Finalizar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+                
+
+            </div>
         </div>
-                    
-              
-        </div>
-    </section>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./questionario.js"></script>
