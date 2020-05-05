@@ -1,8 +1,17 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems);
+    var carousel = document.querySelectorAll('.carousel');
+    var carouselOptions = {
+        fullWidth: true,
+        indicators: true,
+        noWrap: true
+    }
+    var selects = document.querySelectorAll('select');
+    var selectsOptions = {};
+    M.FormSelect.init(selects, selectsOptions);
+    M.Carousel.init(carousel, carouselOptions);
   });
+
 
 const questionario = new Vue({
     el: "#questionario",

@@ -6,115 +6,77 @@
     <title>Questionario</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./questionario.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <section id="questionario">
-        <div class="container">
-            <div class="row">
-                <div class="col s5">
-                    <div class="input-field">
-                        <select>
-                          <option value="" disabled selected>Escolha uma opção</option>
-                          <option value="1">Perder Peso</option>
-                          <option value="2">Dieta Esportiva</option>
-                          <option value="3">Restrição Alimentar</option>
-                        </select>
-                        <label>Motivação *</label>
-                    </div>
-                    <div class="input-field">
-                        <select>
-                          <option value="" disabled selected>Escolha uma opção</option>
-                          <option value="1">Alergia a Lactose</option>
-                          <option value="2">Alergia a Glútem</option>
-                          <option value="3">Restrição Açúcar</option>
-                          <option value="4">Restrição Sal</option>
-                        </select>
-                        <label>Restrição *</label>
-                    </div>
+       
+        <div class="carousel carousel-slider">
 
-                    <label>Sexo *</label> <br>
-                    <label>
-                        <input class="with-gap" name="sexo" type="radio" checked/>
-                        <span>Masculino</span>
-                    </label>
-                    <label>
-                        <input class="with-gap" name="sexo" type="radio"/>
-                        <span>Feminino</span>
-                    </label> <br> <br>
+            <div class="carousel-item">
 
-                    <label for="data_nascimento">Data de nascimento *</label>
-                    <input  id="data_nascimento" type="date" class="validate"> <br> <br>
-
-                    <label>Atividade física *</label>
-                    <div class="row">
-                        <div class="col s6">
-                            <label>
-                                <input type="checkbox" />
-                                <span>Caminhada</span>
-                            </label>
-                        </div>
-                        <div class="col s6">
-                            <label>
-                                <input type="checkbox" />
-                                <span>Natação</span>
-                            </label>
-                        </div>
+                <div class="container">
+                    <h3>1° Passo</h3>
+                    <p class="text-flow">Conte-nos um pouco sobre você</p>
+                    
+                    <div class="input-field col s12">
+                        <input type="text" id="peso">
+                        <label for="peso">Qual é o seu Peso</label>
                     </div>
-                    <div class="row">
-                        <div class="col s6">
-                            <label>
-                                <input type="checkbox" />
-                                <span>Corrida</span>
-                            </label>
-                        </div>
-                        <div class="col s6">
-                            <label>
-                                <input type="checkbox" />
-                                <span>Futebol</span>
-                            </label>
-                        </div>
+                    
+                    <div class="input-field col s12">
+                        <input type="text" id="altura">
+                        <label for="altura">Qual a sua Altura</label>
                     </div>
-                    <div class="row">
-                        <div class="col s6">
+                    <div class="input-field col s12">
+                        <input type="date" id="idade">
+                        <label for="idade">Qual a sua Data de Nascimento</label>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <p>
                             <label>
-                                <input type="checkbox" />
-                                <span>Academia</span>
+                              <input class="with-gap" name="group1" type="radio" checked />
+                              <span>Masculino</span>
                             </label>
-                        </div>
-                        <div class="col s6">
+                          </p>
+                          <p>
                             <label>
-                                <input type="checkbox" />
-                                <span>Ciclismo</span>
+                              <input class="with-gap" name="group1" type="radio" />
+                              <span>Feminino</span>
                             </label>
-                        </div>
+                          </p>
                     </div>
                 </div>
-                <!--Fim primeira coluna-->
-                <div class="col s5 offset-s2">
-                    <div>
-                        <label for="peso">Peso *</label>
-                        <input id="peso" placeholder="peso kg *" type="text" class="validate">
-                    </div>
-                    <div>
-                        <label for="altura">Altura *</label>
-                        <input id="altura" placeholder="altura cm *" type="text" class="validate">
-                    </div>
-                    <div>
-                        <label for="perimetro_cintura">Perimetro Cintura</label>
-                        <input id="perimetro_cintura" placeholder="cm" type="text" class="validate">
-                    </div>
-                    <div>
-                        <label for="perimetro_quadril">Perimetro Quadril </label>
-                        <input id="perimetro_quadril" placeholder="cm" type="text" class="validate">
-                    </div>
-                    <p>* Campos obrigatórios</p>
-                    <a class="waves-effect waves-light btn col s4 offset-s8">Finalizar</a>
-                </div>
-                <!--Fim segunda coluna-->
             </div>
-            <!--Fim row-->
+            <div class="carousel-item amber white-text" href="#two!">
+               
+                <div class="container">
+                    <h3>2° Passo</h3>
+                    <p class="text-flow">Conte-nos um pouco mais sobre você</p>
+                    
+                    <div class="input-field col s12">
+                        motivacao
+                    </div>
+                    
+                    <div class="input-field col s12">
+                       restricao
+                    </div>
+                    <div class="input-field col s12">
+                        atividades
+                    </div>
+                   
+                </div>
+
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
         </div>
-        <!--Fim container-->
+                    
+              
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
