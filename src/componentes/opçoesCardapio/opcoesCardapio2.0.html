@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NutriSuit</title>
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <span id="menu-icon" class="material-icons">menu</span>
+            </a>
+            <a href="opcoesCardapio2.0.html" id="título">Notificações</a>
+        </nav>
+
+        <ul id="slide-out" class="sidenav">
+            <li><a class="waves-effect" href="./src/componentes/questionario/questionario.html">Questionário</a></li>
+            <li><a class="waves-effect" href="./src/componentes/opçoesCardapio/opçoes.html">opções de Cardápio</a></li>
+            <li><a class="waves-effect" href="#">opção3</a></li>
+            <li><a class="waves-effect" href="">Notificações</a></li>
+
+        </ul>
+    </div>
+    <section>
+        <ul class="collection">
+            <a href="breakfast.html" class="itemNotification">
+                <li class="collection-item avatar">
+                    <img src="https://www.selecoes.com.br/wp-content/uploads/2018/06/o-que-comer-no-cafe%CC%81-da-manha%CC%83.jpg"
+                        alt="" class="circle">
+                    <span class="title">9:00</span>
+                    <p>Está na hora do café da manhã!
+                        Hoje temos uma sugestão de salada de frutas.
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons"></i></a>
+                </li>
+            </a>
+            <a href="lunch.html" class="itemNotification">
+                <li class="collection-item avatar">
+                    <img src="https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/04/21/salada.jpg" alt=""
+                        class="circle">
+                    <span class="title">12h30</span>
+                    <p>
+                        Humm... Está na hora do seu almoço. Temos hoje um PF com baixas calorias!
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons"></i></a>
+                </li>
+            </a>
+            <a href="dinner.html" class="itemNotification">
+                <li class="collection-item avatar">
+                    <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2019/09/omelete-rapido-tdg.jpg" alt=""
+                        class="circle">
+                    <span class="title">20h30</span>
+                    <p>
+                        É hora do seu jantar. Clique e veja uma opções leve que preparamos pra você!
+                    </p>
+                </li>
+
+            </a>
+        </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scriptRef.js"></script>
+
+</body>
+
+</html>

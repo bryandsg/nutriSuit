@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NutriSuit</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <span id="menu-icon" class="material-icons">menu</span>
+            </a>
+            <a id="título">Café da Manhã</a>
+        </nav>
+        <ul id="slide-out" class="sidenav">
+            <li><a class="waves-effect" href="./src/componentes/questionario/questionario.html">Questionário</a></li>
+            <li><a class="waves-effect" href="./src/componentes/opçoesCardapio/opçoes.html">opções de Cardápio</a></li>
+            <li><a class="waves-effect" href="#">opção3</a></li>
+            <li><a class="waves-effect" href="opcoesCardapio2.0.html">Notificações</a></li>
+        </ul>
+    </div>
+    <section id="app">
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <img id="pãoImg" class="circle" v-bind:src="pão.img" />
+                <span class="title">Pão</span><br>
+                Tipo: <p id="pão">{{pão.tipo}}</p><br>
+                Quantidade: <p id="qntPão">{{pão.quantidade}}</p>
+                <a href="#!" class="secondary-content" v-on:click="changeItem1()">
+                    <i class="material-icons">cached</i>
+                </a>
+                <a id="subItem" href="descriptionItem.html" class="secondary-content">
+                    <i class="material-icons">info_outline </i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <img id="leiteImg" class="circle" v-bind:src="leite.img" />
+                <span class="title">Leite</span><br>
+                Tipo: <p id="leite">{{leite.tipo}}</p><br>
+                Quantidade: <p id="qntLeite">{{leite.quantidade}}</p>
+                <a href="#!" class="secondary-content" v-on:click="changeItem2()">
+                    <i class="material-icons">cached</i>
+                </a>
+                <a id="subItem" href="descriptionItem.html" class="secondary-content">
+                    <i class="material-icons">info_outline </i>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <button class="btn waves-effect waves-light" type="submit" name="action" id="confirmBtn">Confirmar
+        <i class="material-icons right">send</i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scriptRef.js"></script>
+
+</body>
+
+</html>

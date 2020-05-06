@@ -1,0 +1,49 @@
+#título {
+    position: absolute;
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+.itemNotification {
+    text-decoration: none;
+    color: rgb(165, 158, 158);
+    font-size: 12.5px;
+    text-align: left;
+}
+
+li>p {
+    display: inline-block;
+}
+
+.title {
+    font-weight: bold;
+    color: lightslategrey;
+}
+
+#confirmBtn {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#itemDesc{
+    font-size: 17px;
+    margin-top: -2px;
+    font-weight: bold;
+    color: lightslategrey;
+
+}
+
+.card{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#subItem{
+    margin-top: 30px;
+}
+
+
+
