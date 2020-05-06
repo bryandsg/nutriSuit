@@ -1,0 +1,23 @@
+{
+  "name": "nutriapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryandsg/nutriSuit.git"
+  },
+  "author": "Bryan G. Cezar A. Eduardo V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryandsg/nutriSuit/issues"
+  },
+  "homepage": "https://github.com/bryandsg/nutriSuit#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2",
+    "vue": "^2.6.11"
+  }
+}
