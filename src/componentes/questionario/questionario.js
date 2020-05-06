@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Carousel.init(carousel, carouselOptions);
   });
 
-
 const questionario = new Vue({
     el: "#questionario",
     data: {
@@ -32,3 +31,10 @@ const questionario = new Vue({
     },
     methods: {}
 });
+
+function verify() {
+    M.toast({
+        html:"Todos os campos com * devem ser preechidos!",
+        classes: 'rounded red text-black'
+    })
+}

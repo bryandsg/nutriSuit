@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionario</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./questionario.css">
+    <title>Questionário</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="../../../node_modules/materialize-css/dist/css/materialize.css">
+    <link rel="stylesheet" href="./questionario.css">
+    
 </head>
 <body>
     <!-- nav bar -->
@@ -15,15 +16,14 @@
         <a href="#" data-target="slide-out" class="sidenav-trigger">
             <span id="menu-icon"class="material-icons">menu</span>
         </a>    
-        <ul id="nav-mobile" class="center hide-on-med-and-down">
-            <li><a href="#">Tiulo Tela</a></li>
+        <a class="brand-logo center" href="#">Questionário</a>
             
-          </ul>
+         
     </nav>
 
     <ul id="slide-out" class="sidenav">
-        <li><a class="waves-effect" href="./src/componentes/questionario/questionario.html">Questionário</a></li>
-        <li><a class="waves-effect" href="./src/componentes/opçoesCardapio/opçoes.html">opções de Cardápio</a></li>
+        <li><a class="waves-effect" href="#">Questionário</a></li>
+        <li><a class="waves-effect" href="#">opções de Cardápio</a></li>
         <li><a class="waves-effect" href="#">opção3</a></li>
 
     </ul>
@@ -174,18 +174,15 @@
                         <input class="validate" id="quadril" type="number">
                         <label for="quadril">Medida do quadril em cm</label>
                     </div>
-                    <button class="btn waves-effect waves-light col s5 offset-s7 " type="submit">Finalizar
+                    <button onclick="verify()" class="btn waves-effect waves-light col s5 offset-s7 " type="submit">Finalizar
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
-
-                
-
             </div>
         </div>
     </form>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../../../node_modules/vue/dist/vue.js"></script>
+    <script src="../../../node_modules/materialize-css/dist/js/materialize.js"></script>
     <script src="./questionario.js"></script>
 </body>
 </html>
