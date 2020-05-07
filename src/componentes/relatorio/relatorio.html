@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./relatorio.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav> 
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <span id="menu-icon"class="material-icons">menu</span>
+        </a>    
+        <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li><a href="#">Tiulo Tela</a></li>
+            
+          </ul>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li><a class="waves-effect" href="./src/componentes/questionario/questionario.html">Questionário</a></li>
+        <li><a class="waves-effect" href="./src/componentes/opçoesCardapio/opçoes.html">opções de Cardápio</a></li>
+        <li><a class="waves-effect" href="#">opção3</a></li>
+
+    </ul>
+    <!-- nav bar -->
+    <form id="questionario">
+       
+        <div class="carousel carousel-slider">
+    <!-- Primeira parte do formulario -->
+            <div class="carousel-item">
+
+                <div class="container row">
+                    <h3>Frequência</h3>
+                    <p class="text-flow">Dos x dias que você está fazendo a dieta você teve x% de aproveitamento</p>
+
+                    <div class="input-field col s12">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Refeições</th>
+                                    <th>Dias</th>
+                                </tr>                                                                     
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Café da Manhã</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>Lanche da Manhã<span class="material-icons">error_outline</span></td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Almoço</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Lanche da Tarde</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Jantar</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>Ceia</td>
+                                    <td>9</td>
+                                </tr>
+                                                       
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col s12 warning">
+                        <p>Veja o que você precisa melhorar</p>
+                        <ul>
+                            <li>* Beber mais água</li>
+                            <li>* Ter mais atenção ao lanche da manhã</li>
+                        </ul>
+                    </div>
+                    <div class="col s12 aviso">
+                        <h6>Nota Final x, você está indo bem</h6>
+                    </div>
+                </div>
+               
+            </div>
+
+    <!-- Segunda Parte do formulário -->
+
+            <div class="carousel-item">
+               
+                <div class="container row">
+                    <h3>Frequência</h3>
+                    
+                    <div class="input-field col s12" id="Calorias">
+                        <script>
+                            import { Bar } from 'vue-chartjs'
+
+                            export default {
+                              extends: Bar,
+                              mounted () {
+                                this.renderChart(data, options)
+                              }
+                            }
+                        </script>                          
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        
+                    </div>
+                    <div class="col s12">
+                        <label >Selecione as atividades físicas que você pratica</label>
+                        <div class="row">
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+    <script src="./relatorio.js"></script>
+</body>
+</html>

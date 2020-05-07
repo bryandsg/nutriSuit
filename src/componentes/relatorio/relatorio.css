@@ -1,0 +1,25 @@
+.carousel{
+    height: 93vh ;
+}
+.carousel .indicators .indicator-item {
+    background-color: rgba(50, 50, 50, 0.5);
+}
+.carousel .indicators .indicator-item.active {
+    background-color: rgba(50, 50, 50, 1);
+}
+label{
+    color: #000000 !important ;
+}
+.aviso {
+    position: absolute;
+    top: 75vh;
+}
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid #000000;
+    padding: 0px;
+    text-align: center;
+}
