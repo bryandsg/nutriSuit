@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', function() {
     var carousel = document.querySelectorAll('.carousel');
     var carouselOptions = {
@@ -15,10 +16,3 @@ document.addEventListener('DOMContentLoaded', function() {
     M.FormSelect.init(selects, selectsOptions);
     M.Carousel.init(carousel, carouselOptions);
   });
-
-var lm = new Vue({
-    el:"#Calorias",
-    data: {
-        
-    }
-})

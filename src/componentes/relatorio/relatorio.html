@@ -96,17 +96,23 @@
                 <div class="container row">
                     <h3>Frequência</h3>
                     
-                    <div class="input-field col s12" id="Calorias">
-                        <script>
-                            import { Bar } from 'vue-chartjs'
-
-                            export default {
-                              extends: Bar,
-                              mounted () {
-                                this.renderChart(data, options)
-                              }
-                            }
-                        </script>                          
+                    <div class="input-field col s12" id="graficos">
+                        <div>
+                            <h6><strong>Calorias</strong></h6>
+                            <p>Você está consumindo 1.711 kcal por dia</p>
+                            <canvas id="calorias"></canvas>
+                        </div>
+                        <div>
+                            <h6><strong>Água</strong></h6>
+                            <p>Você está consumindo en média 1,4 litro de água por dia</p>
+                            <canvas id="agua"></canvas>    
+                        </div>
+                        <div>
+                            <h6><strong>Calorias Gastas</strong></h6>
+                            <p>Você está gastando em média 2.300 kcal por dia</p>
+                            <canvas id="calGastas"></canvas>                           
+                        </div>                         
+                                              
                     </div>
                     
                     <div class="input-field col s12">
@@ -127,8 +133,69 @@
     </form>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>    
     <script src="./relatorio.js"></script>
+    <script>
+        var calorias= document.getElementById('calorias').getContext('2d');
+        var chart = new Chart(calorias, {
+            // The type of chart we want to create
+            type: 'bar',
+        
+            // The data for our dataset
+            data: {
+                labels: ['27/04', '28/04', '29/04', '30/04', '01/05', '02/05', '03/05','04/05','06/05','07/05'],
+                datasets: [{
+                    label: 'Calorias',
+                    backgroundColor: 'rgb(50, 50, 50, 0.5)',
+                    borderColor: 'rgb(50, 50, 50, 1)',
+                    data: [2000, 1850, 1987, 2154, 1864, 1675, 2246, 0 , 0 , 0 ]
+                }]
+            },
+        
+            // Configuration options go here
+            options: {}
+        });
+        var agua = document.getElementById('agua').getContext('2d');
+        var chart = new Chart(agua, {
+            // The type of chart we want to create
+            type: 'bar',
+        
+            // The data for our dataset
+            data: {
+                labels: ['27/04', '28/04', '29/04', '30/04', '01/05', '02/05', '03/05','04/05','06/05','07/05'],
+                datasets: [{
+                    label: 'Calorias',
+                    backgroundColor: 'rgb(50, 50, 50, 0.5)',
+                    borderColor: 'rgb(50, 50, 50, 1)',
+                    data: [2000, 1850, 1987, 2154, 1864, 1675, 2246, 0 , 0 , 0 ]
+                }]
+            },
+        
+            // Configuration options go here
+            options: {}
+        });
+        var calGastas = document.getElementById('calGastas').getContext('2d');
+        var chart = new Chart(calGastas, {
+            // The type of chart we want to create
+            type: 'bar',
+        
+            // The data for our dataset
+            data: {
+                labels: ['27/04', '28/04', '29/04', '30/04', '01/05', '02/05', '03/05','04/05','06/05','07/05'],
+                datasets: [{
+                    label: 'Calorias',
+                    backgroundColor: 'rgb(50, 50, 50, 0.5)',
+                    borderColor: 'rgb(50, 50, 50, 1)',
+                    data: [2000, 1850, 1987, 2154, 1864, 1675, 2246, 0 , 0 , 0 ]
+                }]
+            },
+        
+            // Configuration options go here
+            options: {}
+        });
+
+
+    </script>
+
 </body>
 </html>
