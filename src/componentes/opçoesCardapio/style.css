@@ -45,5 +45,22 @@ li>p {
     margin-top: 30px;
 }
 
+.pPlano{
 
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.pagination{
+    text-align: center;
+}
+
+div>i{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 28%;
+  
+}
 

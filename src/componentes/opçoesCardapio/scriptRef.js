@@ -1,23 +1,37 @@
-
-     document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems);
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+});
 
 
 let vm = new Vue({
     el: "#app",
     data: {
+
         contadorP: 0,
         contadorL: 0,
         contadorC: 0,
         contadorPr: 0,
         contadorS: 0,
 
-        notificações: [
-            { id: 1, titulo: '9:00', conteúdo: 'Está na hora do café da manhã!  Hoje temos uma sugestão de salada de frutas.', img:"https://www.selecoes.com.br/wp-content/uploads/2018/06/o-que-comer-no-cafe%CC%81-da-manha%CC%83.jpg"},
-            { id: 2, titulo: '12h30', conteúdo: 'Humm... Está na hora do seu almoço. Temos hoje um PF com baixas calorias!', img:"https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/04/21/salada.jpg"},
-            { id: 3, titulo: '20h30', conteúdo: 'É hora do seu jantar. Clique e veja uma opções leve que preparamos pra você!', img:"https://img.itdg.com.br/tdg/images/blog/uploads/2019/09/omelete-rapido-tdg.jpg"},
+        notificações: [{
+                id: 1,
+                titulo: '9:00',
+                conteúdo: 'Está na hora do café da manhã!  Hoje temos uma sugestão de salada de frutas.',
+                img: "https://www.selecoes.com.br/wp-content/uploads/2018/06/o-que-comer-no-cafe%CC%81-da-manha%CC%83.jpg"
+            },
+            {
+                id: 2,
+                titulo: '12h30',
+                conteúdo: 'Humm... Está na hora do seu almoço. Temos hoje um PF com baixas calorias!',
+                img: "https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/04/21/salada.jpg"
+            },
+            {
+                id: 3,
+                titulo: '20h30',
+                conteúdo: 'É hora do seu jantar. Clique e veja uma opções leve que preparamos pra você!',
+                img: "https://img.itdg.com.br/tdg/images/blog/uploads/2019/09/omelete-rapido-tdg.jpg"
+            },
         ],
 
         pão: {
@@ -49,10 +63,11 @@ let vm = new Vue({
             quantidade: '5 folhas',
             img: 'https://images.zonasul.com.br/imagem1000X1000/2014124_Alface%20Crespa%201.jpg',
         },
-        
+
     },
 
     methods: {
+
         changeItem1: function () {
 
             var img = document.getElementById("pãoImg");
