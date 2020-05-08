@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NutriSuit</title>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <span id="menu-icon" class="material-icons">menu</span>
+            </a>
+            <a id="título">Plano Alimentar</a>
+        </nav>
+        <ul id="slide-out" class="sidenav">
+            <li><a class="waves-effect" href="./src/componentes/questionario/questionario.html">Questionário</a></li>
+            <li><a class="waves-effect" href="./src/componentes/opçoesCardapio/opçoes.html">opções de Cardápio</a></li>
+            <li><a class="waves-effect" href="#">opção3</a></li>
+            <li><a class="waves-effect" href="notification.html">Notificações</a></li>
+            <li><a class="waves-effect" href="plan.html">Meu Plano Alimentar</a></li>
+        </ul>
+    </div>
+    <section id="app">
+        <table class="centered">
+            <thead>
+                <ul class="pagination">
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-effect"><a href="#!"> DD/MM/YYYY</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+                <tr>
+                    <th>Refeição</th>
+                    <th>Horário</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Desjejum</td>
+                    <td>9H00</td>
+                    <td><i class="material-icons">keyboard_arrow_right</i></td>
+                </tr>
+                <tr>
+                    <td>Brunch</td>
+                    <td>10hH30</td>
+                    <td><i class="material-icons">keyboard_arrow_right</i></td>
+                </tr>
+                <tr>
+                    <td>Almoço</td>
+                    <td>12H30</td>
+                    <td><i class="material-icons">keyboard_arrow_right</i></td>
+                </tr>
+                <tr>
+                    <td>Lanche da Tarde</td>
+                    <td>15H30</td>
+                    <td><i class="material-icons">keyboard_arrow_right</i></td>
+                </tr>
+                <tr>
+                    <td>Lanche da Noite</td>
+                    <td>18H30</td>
+                    <td><i class="material-icons">keyboard_arrow_right</i></td>
+                </tr>
+                <tr>
+                    <td>Jantar</td>
+                    <td>21h30</td>
+                    <td><i class="material-icons">keyboard_arrow_right</i></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+    <div class="footerIcons">
+        <i class="material-icons">help_outline</i>
+        <i class="material-icons">question_answer</i>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scriptRef.js"></script>
+
+</body>
+
+</html>
