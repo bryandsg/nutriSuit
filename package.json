@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bryandsg/nutriSuit#readme",
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "materialize-css": "^1.0.0-rc.2",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0"
